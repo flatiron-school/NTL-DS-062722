@@ -1,0 +1,39 @@
+Let's go over some common git commands!
+---------------------------------------
+
+1. Find a repo you're interested in having your own version of.
+
+2. Fork it (click the button) to create in the cloud a new copy of the repo.
+
+3. Find a place in your file system where you want to store the local copy.
+
+4. Clone your fork down to your local machine (run `git clone <URL>`).
+
+5. Use bash commands to explore the directory.
+
+6. Run `git branch -a` to see what branches exist on the remote.
+
+7. Run `git remote -v` to see the addresses for the repositories on GitHub to which your local copy is tied.
+
+8. Make some modifications.
+
+9. Run `git status` to see where things stand with respect to git tracking.
+
+10. Run `git add <file>` to add <file> or `git add .` to add everything. `git add <>` tells git what to track.
+
+11. Run `git status` again. Are things different now?
+
+12. Did you make a mistake? Run `git reset` to undo the last `git add`. Want to go back further to a previous commit? You can add a commit hash to the command: `git reset <hash>`. The hashes of all commits can be seen by running `git log`.
+
+13. Run `git commit`.
+
+14. Now you'll jump into the VIM editor. Commits all need messages describing their content / purpose. If you want to forgo using VIM at this stage, you can add an "-m" flag to the command and then add your message inline: `git commit -m <"make changes">`.
+
+15. Run `git status` again. Now how does it look?
+
+16. Run `git push origin main`. The names following the 'push' describe the destination of your changes. "origin" is the default name for the repository to which you push local changes and "main" is the default branch name. If you are connected to other repositories or are working on other branches (more on this later), you'll want to adjust these parameters in the `git push` command.
+
+17. (Time permitting) Make a change (or add a file) to the repo on GitHub.
+
+18. (Time permitting) Run `git pull` to bring in those changes into your local copy.
+
