@@ -1,0 +1,10 @@
+list
+each
+student
+name
+on
+a
+new
+line
+like
+this
